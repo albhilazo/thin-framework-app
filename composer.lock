@@ -1,0 +1,118 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "02e4ad5eecaeb18908f9749a22fd29c9",
+    "content-hash": "0d56e827c88d052a8830a01a76bc30b8",
+    "packages": [
+        {
+            "name": "albhilazo/thin-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/albhilazo/thin-framework.git",
+                "reference": "f022f2f24354415987dd37961185361539eecfe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/albhilazo/thin-framework/zipball/f022f2f24354415987dd37961185361539eecfe8",
+                "reference": "f022f2f24354415987dd37961185361539eecfe8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "symfony/yaml": "^3.1"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ThinFramework\\": "src/ThinFramework/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Albert Hilazo",
+                    "email": "albhilazo@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/albhilazo/thin-framework",
+            "support": {
+                "source": "https://github.com/albhilazo/thin-framework/tree/master",
+                "issues": "https://github.com/albhilazo/thin-framework/issues"
+            },
+            "time": "2016-07-24 19:34:49"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "cd3288cd749886aa1ff43038f17db6494e883262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/cd3288cd749886aa1ff43038f17db6494e883262",
+                "reference": "cd3288cd749886aa1ff43038f17db6494e883262",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-07-17 14:08:33"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "albhilazo/thin-framework": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6"
+    },
+    "platform-dev": []
+}
