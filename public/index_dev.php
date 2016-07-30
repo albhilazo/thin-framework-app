@@ -7,5 +7,9 @@ use ThinFramework\Component\Bootstrap\Bootstrap;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+$config = [
+    'routing_path' => __DIR__.'/../app/routing/routing.yml',
+];
 
-new Bootstrap();
+$app = new Bootstrap($config);
+$app();
