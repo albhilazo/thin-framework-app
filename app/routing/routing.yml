@@ -1,0 +1,12 @@
+root:
+  path: /
+  controller: ThinApp\Controller\HomeController
+
+home:
+  path: /home
+  controller: ThinApp\Controller\HomeController
+
+actionTest:
+  path: /action-test
+  controller: ThinApp\Controller\ActionTestController
+  action: testMethod
