@@ -3,37 +3,44 @@
 namespace ThinApp\Controller;
 
 use ThinFramework\Component\Controller\ThinController;
+use ThinFramework\Component\Templating\TemplatingAdapter;
 
 
 class StudentController extends ThinController
 {
 
-    public function __construct()
+    const TEMPLATE = 'example.tpl';
+
+
+    public function __construct(TemplatingAdapter $templating)
     {
-        $this->setResponse('Student page');
+        parent::__construct($templating);
+
+        $this->template->setLayout(self::TEMPLATE);
+        $this->template->setParam('head_title', 'Student page');
     }
 
 
     public function indexAction($studentId)
     {
-        $output = ' - indexAction called'
+        $output = 'indexAction called'
             . '<br>' . 'Parameters:'
             . '<br>' . ' - student_id: ' . $studentId;
 
-        $this->response->appendContent($output);
-        $this->response->send();
+        $this->template->setParam('body_content', $output);
+        $this->sendResponse();
     }
 
 
     public function scoreAction($studentId, $scoreId)
     {
-        $output = ' - indexAction called'
+        $output = 'scoreAction called'
             . '<br>' . 'Parameters:'
             . '<br>' . ' - student_id: ' . $studentId
             . '<br>' . ' - score_id: '   . $scoreId;
 
-        $this->response->appendContent($output);
-        $this->response->send();
+        $this->template->setParam('body_content', $output);
+        $this->sendResponse();
     }
 
 }

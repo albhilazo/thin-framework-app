@@ -3,21 +3,28 @@
 namespace ThinApp\Controller;
 
 use ThinFramework\Component\Controller\ThinController;
+use ThinFramework\Component\Templating\TemplatingAdapter;
 
 
 class NotFound404Controller extends ThinController
 {
 
-    public function __construct()
+    const TEMPLATE = 'example.tpl';
+
+
+    public function __construct(TemplatingAdapter $templating)
     {
-        $this->setResponse('');
+        parent::__construct($templating);
+
+        $this->template->setLayout(self::TEMPLATE);
+        $this->template->setParam('head_title', 'Error 404');
     }
 
 
     public function indexAction()
     {
-        $this->response->appendContent('Error 404 - Not found');
-        $this->response->send();
+        $this->template->setParam('body_content', 'Not found');
+        $this->sendResponse();
     }
 
 }

@@ -3,21 +3,28 @@
 namespace ThinApp\Controller;
 
 use ThinFramework\Component\Controller\ThinController;
+use ThinFramework\Component\Templating\TemplatingAdapter;
 
 
 class HomeController extends ThinController
 {
 
-    public function __construct()
+    const TEMPLATE = 'example.tpl';
+
+
+    public function __construct(TemplatingAdapter $templating)
     {
-        $this->setResponse('Home page');
+        parent::__construct($templating);
+
+        $this->template->setLayout(self::TEMPLATE);
+        $this->template->setParam('head_title', 'Home page');
     }
 
 
     public function indexAction()
     {
-        $this->response->appendContent(' - indexAction called');
-        $this->response->send();
+        $this->template->setParam('body_content', 'indexAction called');
+        $this->sendResponse();
     }
 
 }
