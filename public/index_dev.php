@@ -14,6 +14,7 @@ $config = [
     // 'templating_engine' => 'Smarty',
     'templating_path'   => __DIR__.'/../src/View/twig',
     'templating_engine' => 'Twig',
+    'services_path'     => __DIR__.'/../app/services/services.yml',
 ];
 
 $app     = new Bootstrap($config);
