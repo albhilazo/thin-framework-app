@@ -9,7 +9,9 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 $config = [
-    'routing_path' => __DIR__.'/../app/routing/routing.yml',
+    'routing_path'      => __DIR__.'/../app/routing/routing.yml',
+    'templating_path'   => __DIR__.'/../src/View/twig',
+    'templating_engine' => 'Twig',
 ];
 
 $app     = new Bootstrap($config);
