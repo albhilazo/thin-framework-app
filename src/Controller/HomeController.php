@@ -11,4 +11,10 @@ class HomeController
         echo "Home page";
     }
 
+
+    public function indexAction()
+    {
+        echo " - indexAction called";
+    }
+
 }

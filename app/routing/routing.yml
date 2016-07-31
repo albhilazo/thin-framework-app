@@ -18,3 +18,4 @@ student:
 studentScore:
   path: /students/{student_id}/scores/{score_id}
   controller: ThinApp\Controller\StudentController
+  action: scoreAction
