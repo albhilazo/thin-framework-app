@@ -1,3 +1,7 @@
+e404:
+  path:
+  controller: ThinApp\Controller\NotFound404Controller
+
 root:
   path: /
   controller: ThinApp\Controller\HomeController
