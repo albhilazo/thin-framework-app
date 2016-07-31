@@ -13,16 +13,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/albhilazo/thin-framework.git",
-                "reference": "735f3e3bf99e157c26ccbd7cc368b3feaf65e054"
+                "reference": "d841f28b6ce2873d1838cca0bba6a4a160aef977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/albhilazo/thin-framework/zipball/735f3e3bf99e157c26ccbd7cc368b3feaf65e054",
-                "reference": "735f3e3bf99e157c26ccbd7cc368b3feaf65e054",
+                "url": "https://api.github.com/repos/albhilazo/thin-framework/zipball/d841f28b6ce2873d1838cca0bba6a4a160aef977",
+                "reference": "d841f28b6ce2873d1838cca0bba6a4a160aef977",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6",
+                "smarty/smarty": "^3.1",
                 "symfony/yaml": "^3.1",
                 "twig/twig": "^1.24"
             },
@@ -46,7 +47,62 @@
                 "source": "https://github.com/albhilazo/thin-framework/tree/master",
                 "issues": "https://github.com/albhilazo/thin-framework/issues"
             },
-            "time": "2016-07-31 17:23:56"
+            "time": "2016-07-31 18:52:29"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "f74a0d575a99bc9b0e307c2698a3756c2ac9fab1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/f74a0d575a99bc9b0e307c2698a3756c2ac9fab1",
+                "reference": "f74a0d575a99bc9b0e307c2698a3756c2ac9fab1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-07-24 18:31:27"
         },
         {
             "name": "symfony/yaml",
