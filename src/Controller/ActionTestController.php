@@ -2,19 +2,22 @@
 
 namespace ThinApp\Controller;
 
+use ThinFramework\Component\Controller\ThinController;
 
-class ActionTestController
+
+class ActionTestController extends ThinController
 {
     
     public function __construct()
     {
-        echo "ActionTestController loaded";
+        $this->setResponse('ActionTestController loaded');
     }
 
 
     public function testMethod()
     {
-        echo " - testMethod called";
+        $this->response->appendContent(' - testMethod called');
+        $this->response->send();
     }
 
 }

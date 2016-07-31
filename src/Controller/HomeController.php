@@ -2,19 +2,22 @@
 
 namespace ThinApp\Controller;
 
+use ThinFramework\Component\Controller\ThinController;
 
-class HomeController
+
+class HomeController extends ThinController
 {
 
     public function __construct()
     {
-        echo "Home page";
+        $this->setResponse('Home page');
     }
 
 
     public function indexAction()
     {
-        echo " - indexAction called";
+        $this->response->appendContent(' - indexAction called');
+        $this->response->send();
     }
 
 }

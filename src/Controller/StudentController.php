@@ -2,30 +2,38 @@
 
 namespace ThinApp\Controller;
 
+use ThinFramework\Component\Controller\ThinController;
 
-class StudentController
+
+class StudentController extends ThinController
 {
 
     public function __construct()
     {
-        echo "Student page";
+        $this->setResponse('Student page');
     }
 
 
     public function indexAction($studentId)
     {
-        echo " - indexAction called"
-            . "<br>" . "Parameters:"
-            . "<br>" . " - student_id: " . $studentId;
+        $output = ' - indexAction called'
+            . '<br>' . 'Parameters:'
+            . '<br>' . ' - student_id: ' . $studentId;
+
+        $this->response->appendContent($output);
+        $this->response->send();
     }
 
 
     public function scoreAction($studentId, $scoreId)
     {
-        echo " - indexAction called"
-            . "<br>" . "Parameters:"
-            . "<br>" . " - student_id: " . $studentId
-            . "<br>" . " - score_id: "   . $scoreId;
+        $output = ' - indexAction called'
+            . '<br>' . 'Parameters:'
+            . '<br>' . ' - student_id: ' . $studentId
+            . '<br>' . ' - score_id: '   . $scoreId;
+
+        $this->response->appendContent($output);
+        $this->response->send();
     }
 
 }
