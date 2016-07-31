@@ -10,3 +10,11 @@ actionTest:
   path: /action-test
   controller: ThinApp\Controller\ActionTestController
   action: testMethod
+
+student:
+  path: /students/{student_id}
+  controller: ThinApp\Controller\StudentController
+
+studentScore:
+  path: /students/{student_id}/scores/{score_id}
+  controller: ThinApp\Controller\StudentController
