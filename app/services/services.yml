@@ -1,0 +1,26 @@
+symfony.yaml:
+  class: Symfony\Component\Yaml\Parser
+
+thin.repository.pdo:
+  class: ThinFramework\Component\Repository\PDORepository
+  arguments:
+    - "localhost"
+    - "root"
+    - ""
+    - "thin"
+
+thin.router:
+  class: ThinFramework\Component\Router\Router
+  arguments:
+    - "@symfony.yaml"
+    - "/path/to/app/routing/routing.yml"
+
+thin.templating.smarty:
+  class: ThinFramework\Component\Templating\SmartyAdapter
+  arguments:
+    - "/path/to/src/View/smarty"
+
+thin.templating.twig:
+  class: ThinFramework\Component\Templating\TwigAdapter
+  arguments:
+    - "/path/to/src/View/twig"
