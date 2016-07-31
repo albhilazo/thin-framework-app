@@ -13,17 +13,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/albhilazo/thin-framework.git",
-                "reference": "f022f2f24354415987dd37961185361539eecfe8"
+                "reference": "735f3e3bf99e157c26ccbd7cc368b3feaf65e054"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/albhilazo/thin-framework/zipball/f022f2f24354415987dd37961185361539eecfe8",
-                "reference": "f022f2f24354415987dd37961185361539eecfe8",
+                "url": "https://api.github.com/repos/albhilazo/thin-framework/zipball/735f3e3bf99e157c26ccbd7cc368b3feaf65e054",
+                "reference": "735f3e3bf99e157c26ccbd7cc368b3feaf65e054",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6",
-                "symfony/yaml": "^3.1"
+                "symfony/yaml": "^3.1",
+                "twig/twig": "^1.24"
             },
             "type": "project",
             "autoload": {
@@ -45,7 +46,7 @@
                 "source": "https://github.com/albhilazo/thin-framework/tree/master",
                 "issues": "https://github.com/albhilazo/thin-framework/issues"
             },
-            "time": "2016-07-24 19:34:49"
+            "time": "2016-07-31 17:23:56"
         },
         {
             "name": "symfony/yaml",
@@ -101,6 +102,67 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-07-17 14:08:33"
+        },
+        {
+            "name": "twig/twig",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "b7cd3a88dcab5189a7f6d7f8756b17cd25faf759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b7cd3a88dcab5189a7f6d7f8756b17cd25faf759",
+                "reference": "b7cd3a88dcab5189a7f6d7f8756b17cd25faf759",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.24-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-07-28 20:58:48"
         }
     ],
     "packages-dev": [],
